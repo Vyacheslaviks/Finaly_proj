@@ -3,7 +3,7 @@
 int start_size = InputInt();
 string[] array = new string[start_size];
 array = InputString(array);
-PrintArrayString(FiltersForArray(array));
+PrintArrayString(ArrayFilter(array));
 
 
 //методы
@@ -37,15 +37,15 @@ string[] InputString(string[] array)
 
 void PrintArrayString(string[] array)
 {
-    Console.WriteLine("------------------");
+    Console.WriteLine("---------");
     for(int i = 0; i < array.Length; i++)
     {
         Console.WriteLine(array[i]);
     }
-    Console.WriteLine("------------------");
+    Console.WriteLine("---------");
 }
 
-string[] FiltersForArray(string[] array)
+string[] ArrayFilter(string[] array)
 {
     int result_size = 0;
 
